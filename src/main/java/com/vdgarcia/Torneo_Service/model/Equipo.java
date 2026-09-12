@@ -20,5 +20,9 @@ public class Equipo {
     private Boolean activo;
     @OneToMany(mappedBy = "equipo", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Jugador> jugadores;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "torneo_id")
+    private Torneo torneo;
+
 
 }

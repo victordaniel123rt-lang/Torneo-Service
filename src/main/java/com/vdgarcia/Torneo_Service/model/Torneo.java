@@ -20,6 +20,6 @@ public class Torneo {
     private Integer maxEquipos;
     private Estado estado;
     @OneToMany(mappedBy = "torneo", fetch = FetchType.LAZY)
-    private List<Equipo> equipos;   
+    private List<Equipo> equipos;
 
 }
