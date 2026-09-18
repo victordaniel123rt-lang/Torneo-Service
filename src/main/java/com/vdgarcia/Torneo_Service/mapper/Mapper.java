@@ -106,6 +106,18 @@ public class Mapper {
 
     }
 
+    public static void updateEquipo(EquipoDTO dto, Equipo entity){
+        if (dto==null || entity==null) return;
+
+        entity.setNombre(dto.getNombre());
+        entity.setJuego(dto.getJuego());
+        entity.setActivo(dto.getActivo());
+
+    }
+
+
+
+
 
 
 
