@@ -95,6 +95,20 @@ public class Mapper {
                 .build();
     }
 
+    public static void updateJugador(JugadorDTO dto, Jugador entity){
+        if (dto==null || entity == null) return;
+
+        entity.setNombre(dto.getNombre());
+        entity.setNickName(dto.getNickName());
+        entity.setNivel(dto.getNivel());
+        entity.setPuntos(dto.getPuntos());
+        entity.setActivo(dto.getActivo());
+
+    }
+
+
+
+
 
 
 
